@@ -1,0 +1,46 @@
+{
+  "name": "plotter-isosurface",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "go": "ts-node src/app.tsx",
+    "watch-go": "onchange src/*.ts* -i -- ts-node src/core.ts",
+    "build": "webpack",
+    "clean": "rm -f public/static/dist/*.js*",
+    "watch": "webpack --watch",
+    "serve": "ecstatic -p 8000 public",
+    "watch-and-serve": "npm run watch & npm run serve",
+    "dev": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/davidwallace/plotter-isosurface.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/davidwallace/plotter-isosurface#readme",
+  "devDependencies": {
+    "@types/aphrodite": "^0.5.6",
+    "@types/color": "^3.0.0",
+    "@types/md5": "^2.1.32",
+    "@types/react": "^16.0.35",
+    "@types/react-dom": "^16.0.3",
+    "awesome-typescript-loader": "^3.4.1",
+    "ecstatic": "^3.1.1",
+    "onchange": "^3.3.0",
+    "prettier": "^1.10.2",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "aphrodite": "^1.2.5",
+    "color": "^3.0.0",
+    "md5": "^2.2.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
