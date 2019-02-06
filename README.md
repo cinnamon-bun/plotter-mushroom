@@ -1,3 +1,5 @@
+SVG art for pen plotters like the [AxiDraw](https://axidraw.com/).
+
 This algorithm starts with a handful of points in a small circle.  The points repel each other but are constrained to stay on the circle, so they end up spacing themselves out evenly.  The circle slowly grows.  When a point has enough space between itself and its neighbors, it divides into two points.
 
 ---
@@ -29,6 +31,8 @@ This time I added a twist force and a gravity force to the points.
 * Clone this git repo
 * Have [node installed](https://nodejs.org/en/).  You can test this by running `node --version` in a shell.  You probably need version 8 or higher.
 * Install the dependencies: `npm install`
+
+Also available at https://cinnamon-plotter-mushroom.hashbase.io/public/ `dat://631a99d56ba86c1942c7eb82f955d61df9a99843e076bad8793baf033dfa7386/`
 
 ## Run and edit
 
